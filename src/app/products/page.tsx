@@ -21,20 +21,27 @@ const ProductsPage = async () => {
     if (!res.ok) {
       throw new Error('Erro ao buscar produtos');
     }
-
+  
     const data = await res.json();
     products = data.products;
-
+  
     const categoriesSet = new Set<string>(products.map((product: Product) => product.category));
     categories = Array.from(categoriesSet);
-  } catch (err: any) {
-    console.error("Erro ao buscar produtos:", err.message);
-    error = err.message;
+  } catch (err: unknown) {
+    // Verificação de tipo do erro
+    if (err instanceof Error) {
+      console.error("Erro ao buscar produtos:", err.message);
+      error = err.message;
+    } else {
+      console.error("Erro inesperado:", err);
+      error = "Erro desconhecido";
+    }
   }
-
+  
   if (error) {
     return <div>Erro: {error}</div>;
   }
+  
 
   return (
     <>
