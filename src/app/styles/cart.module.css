@@ -1,0 +1,28 @@
+.container {
+    padding: 20px;
+  }
+  
+  .cartItem {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .removeButton {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .removeButton:hover {
+    background-color: #c82333;
+  }
+  
