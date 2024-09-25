@@ -1,5 +1,4 @@
 import ProductList from './ProductsList';
-import { useCart } from '../../context/CartContext';
 import Link from 'next/link';
 
 import styles from '../styles/product.module.css'
