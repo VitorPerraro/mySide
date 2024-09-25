@@ -1,0 +1,175 @@
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    padding-bottom: 50px;
+  }
+  
+  .imagem {
+    max-width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .preco {
+    font-weight: bold;
+    color: #FF3B49;
+    position: absolute;
+    bottom: 10px;
+    left: 10px; 
+  }
+  
+  .searchInput {
+    margin: 20px 0;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #FF3B49;
+  }
+  
+  .filterContainer {
+    margin: 20px 0;
+  }
+  
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .paginationButton {
+    background-color: #FF3B49;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 16px;
+  }
+  
+  .paginationButton:hover {
+    background-color: #FF3B49;
+    transform: scale(1.05);
+  }
+  
+  .paginationButton:disabled {
+    background-color: #FF8C94;
+    cursor: not-allowed;
+  }
+  
+  .paginationButton:disabled:hover {
+    transform: none;
+  }
+  
+  .pagination span {
+    font-size: 16px;
+    color: #333;
+    margin: 0 10px;
+  }
+  
+  .checkboxLabel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .checkboxLabel input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #FF3B49;
+    border-radius: 4px;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .checkboxLabel input[type="checkbox"]:checked {
+    background-color: #FF3B49;
+    border-color: #FF3B49;
+  }
+  
+  .checkboxLabel input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  .checkboxLabel input[type="checkbox"]:hover {
+    border-color: #FF3B49;
+  }
+  
+  .checkboxLabel input[type="checkbox"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 59, 73, 0.5);
+  }
+  .cartButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .cartButton {
+    background-color: #FF3B49;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .cartButton:hover {
+    background-color: #FF3B49;
+  }
+  .cartButtonContainer {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  .cartButton {
+    background-color: #FF3B49; /* Cor de fundo */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Efeito de transição ao passar o mouse */
+  }
+  
+  .cartButton:hover {
+    background-color: #ff1f36; /* Cor ao passar o mouse */
+  }
+  
