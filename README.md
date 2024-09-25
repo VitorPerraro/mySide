@@ -22,8 +22,8 @@ Clone o repositório e instale as dependências necessárias:
 
 bash
 
-git clone https://github.com/seuusuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/VitorPerraro/mySide.git
+cd mySide
 npm install
 
 Rodando o Servidor de Desenvolvimento
