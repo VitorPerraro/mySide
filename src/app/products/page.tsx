@@ -1,6 +1,5 @@
 import ProductList from './ProductsList';
 import Link from 'next/link';
-
 import styles from '../styles/product.module.css'
 
 interface Product {
