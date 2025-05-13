@@ -1,5 +1,8 @@
 Projeto MYSIDE com Next.js
 
+Disponível no Vercel: https://my-side-app.vercel.app/
+
+
 <<<<<<< HEAD
 Este é um projeto de e-commerce desenvolvido utilizando Next.js, criado com create-next-app. Funcionalidades
 
